@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+    try {
     const name = ratName.value.trim();
     const atk = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
     const hp = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
 
-    try {
 
       const newRat = new ElectricRat(name, atk, hp);
       rats.push(newRat);

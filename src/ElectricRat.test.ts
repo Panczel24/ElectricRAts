@@ -6,16 +6,16 @@ describe("ElectricRat konstruktor", () => {
 
   test("helyes adatokkal létrejön az objektum", () => {
 
-    const rat = new ElectricRat("Peti", 15, 80);
+    const rat = new ElectricRat("Rat", 15, 80);
 
-    expect(rat.name).toBe("Peti");
+    expect(rat.name).toBe("Rat");
     expect(rat.atk).toBe(15);
     expect(rat.hp).toBe(80);
 
   });
 
   test("konstruktor nem dob hibát", ()=>{
-        expect(()=>new ElectricRat("Peti", 15, 80)).not.to.throw
+        expect(()=>new ElectricRat("Rat", 15, 80)).not.to.throw
     })
 
 
@@ -31,7 +31,7 @@ describe("ElectricRat konstruktor", () => {
   test("0 támadás esetén kivételt dob", () => {
 
     expect(() => {
-      new ElectricRat("Peti", 0, 80);
+      new ElectricRat("Rat", 0, 80);
     }).toThrow();
 
   });
@@ -40,7 +40,7 @@ describe("ElectricRat konstruktor", () => {
   test("negatív támadás esetén kivételt dob", () => {
 
     expect(() => {
-      new ElectricRat("Peti", -5, 80);
+      new ElectricRat("Rat", -5, 80);
     }).toThrow();
 
   });
@@ -50,7 +50,7 @@ describe("ElectricRat konstruktor", () => {
   test("0 élet esetén kivételt dob", () => {
 
     expect(() => {
-      new ElectricRat("Peti", 15, 0);
+      new ElectricRat("Rat", 15, 0);
     }).toThrow();
 
   });
@@ -59,7 +59,7 @@ describe("ElectricRat konstruktor", () => {
   test("negatív élet esetén kivételt dob", () => {
 
     expect(() => {
-      new ElectricRat("Peti", 15, -10);
+      new ElectricRat("Rat", 15, -10);
     }).toThrow();
 
   });
@@ -73,9 +73,9 @@ describe("ElectricRat toCSV", () => {
 
   test("csv formátummá alakítás", () => {
 
-    const rat = new ElectricRat("Peti", 15, 80);
+    const rat = new ElectricRat("Rat", 15, 80);
 
-    expect(rat.toCSV()).toBe("Peti;15;80");
+    expect(rat.toCSV()).toBe("Rat;15;80");
 
   });
 

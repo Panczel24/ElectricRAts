@@ -28,9 +28,6 @@ export class ElectricRat {
 
   }
 
-  // toString(): string {
-  //   return `${this.name};${this.atk};${this.hp}`;
-  // }
   toCSV(): string{
     return `${this.name};${this.atk};${this.hp}`;
 

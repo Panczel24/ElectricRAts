@@ -12,7 +12,6 @@ body {
   width: 100%;
   max-width: 500px;
   margin: 50px auto;
-  text-align: center;
 }
 
 input, textarea {
@@ -49,7 +48,7 @@ button {
 
 .card {
   background-color: white;
-  border: 1px solid rgb(178, 175, 175);
+  border: 1px solid #aeaeae;
   border-radius: 10px;
   padding: 20px;
   animation: fadeIn 0.5s ease-in;
